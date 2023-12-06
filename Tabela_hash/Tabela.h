@@ -1,7 +1,3 @@
-//
-// Created by lenit on 05/12/2023.
-//
-
 #ifndef UNTITLED2_TABELA_H
 #define UNTITLED2_TABELA_H
 
@@ -9,7 +5,6 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>
-
 
 struct usuario {
     char login[10];
@@ -42,6 +37,7 @@ bool inserirE (Dicionario *d, char *chave, Pessoa *valor);
 char *copia_string (char *s);
 int hash (const char *chave, int t);
 void alimenta_dicionario (Dicionario *dicionario);
+void arg (char arg1[], char arg2[], int argc, char **argv);
 void completa_vetor (char palavra[]);
 void destruir_dicionario (Dicionario *d);
 void destruir_dicionarioE (Dicionario *d);
@@ -50,6 +46,5 @@ void destruir_no (No *no);
 void entradas (char login[], char senha[]);
 void imprimir_pessoa (Dicionario *d, char *chave);
 void imprimir_pessoaE (Dicionario *d, char *chave);
-
 
 #endif //UNTITLED2_TABELA_H
