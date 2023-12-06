@@ -1,7 +1,3 @@
-//
-// Created by lenit on 05/12/2023.
-//
-
 #include "Tabela.h"
 
 Dicionario *criar_dicionario(int t) {
@@ -137,6 +133,20 @@ void alimenta_dicionario (Dicionario *dicionario) {
         }
     }
     fclose(arq);
+}
+
+void arg (char arg1[], char arg2[], int argc, char **argv) {
+    if (argc > 1) {
+        for (int i = 0; i < 10; ++i) {
+            arg1[i] = argv[1][i];
+            arg2[i] = argv[2][i];
+        }
+
+    } else {
+        entradas(arg1, arg2);
+        completa_vetor(arg1);
+        completa_vetor(arg2);
+    }
 }
 
 void completa_vetor (char palavra[]) {
