@@ -1,15 +1,13 @@
 #include "Tabela.h"
 
-int main () {
+int main (int argc, char **argv) {
 
     char loginE[10];
     char senhaE[10];
 
-    entradas(loginE, senhaE);
-    completa_vetor(loginE);
-    completa_vetor(senhaE);
+    arg (loginE, senhaE, argc, argv);
 
-    Dicionario *dicionario = criar_dicionario(100);
+    Dicionario *dicionario = criar_dicionario(500);
     if (dicionario == NULL) {
         printf("Não foi possível reservar memória\n");
         exit(EXIT_FAILURE);
