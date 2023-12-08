@@ -1,0 +1,5 @@
+# ninja log v5
+1	13	1702056584732062432	CMakeFiles/Tabela_hash.dir/home/aluno/CLionProjects/Estruturas/Arvores/Arvore.c.o	a0342979b011a597
+0	30	1702056584748062033	CMakeFiles/Tabela_hash.dir/main.c.o	47320dce52b9cedb
+0	48	1702056584764061635	CMakeFiles/Tabela_hash.dir/Tabela.c.o	3a90d4236fdf97ba
+48	67	1702056584784061137	Tabela_hash	ce090bf658d35e4d
